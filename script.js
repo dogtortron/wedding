@@ -13,7 +13,7 @@ const countdownEl = document.getElementById('countdown');
 (function initCountdown(){
   if (!countdownEl) return;
   // TODO: set your exact time and timezone if needed
-  const target = new Date('2025-10-18T9:00:00-13:30'); // 1:30 PM MDT
+  const target = new Date('2025-10-18T9:00:00-6:00'); // 1:30 PM MDT
   const pad = (n)=> String(n).padStart(2,'0');
 
   function render(){
