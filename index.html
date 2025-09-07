@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Wedding</title>
+  <meta name="description" content="Join us to celebrate our wedding on October 18, 2025 in Salt Lake City. Details, RSVP, schedule, and registry." />
+  <meta property="og:title" content="Our Wedding" />
+  <meta property="og:description" content="We can’t wait to celebrate with you!" />
+  <meta property="og:type" content="website" />
+  <!-- If you add a share image: <meta property="og:image" content="https://your-domain/og.jpg" /> -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Keeping it simple with system fonts; remove if you add a font -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' x='6' font-size='48'%3E💍%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Home">D ♥ P</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="site-nav" aria-label="Primary">
+      <a href="#details">Details</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#venue">Venue</a>
+      <a href="#travel">Travel</a>
+      <a href="#rsvp" class="pill">RSVP</a>
+      <a href="#registry">Registry</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <!-- TODO: Replace with your own image -->
+      <img class="hero-img" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1600" alt="A romantic outdoor scene" />
+      <div class="hero-content">
+        <h1 class="couple">Tran & Josh</h1>
+        <p class="date">October 18, 2025 • Salt Lake City, Utah</p>
+        <div id="countdown" class="countdown" aria-live="polite"></div>
+        <a href="#rsvp" class="btn">RSVP</a>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section id="details" class="section">
+      <div class="container">
+        <h2>We’re getting married!</h2>
+        <p>
+          We can’t wait to celebrate with you. Below you’ll find the schedule, venue info, travel tips, and RSVP.
+        </p>
+        <ul class="highlights">
+          <li><strong>Sealing Ceremony:</strong> Oct 18, 2025 at the Taylorsville Temple</li>
+          <li><strong>Reception:</strong> Oct 18, 2025 at 11:30 AM - 1:30 PM</li>
+          <li><strong>Hashtag:</strong> <code>#JoshAndTran</code></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section alt">
+      <div class="container">
+        <h2>Reception Schedule</h2>
+        <div class="timeline">
+          <article>
+            <time datetime="2025-10-18T11:30">11:30 AM</time>
+            <h3>Guest Arrival</h3>
+            <p>Say hi to the Bride and Groom!</p>
+          </article>
+          <article>
+            <time datetime="2025-10-18T12:00">Noon</time>
+            <h3>Reception</h3>
+            <p>Light lunch, talks, and dessert.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUE -->
+    <section id="venue" class="section">
+      <div class="container">
+        <h2>Venue</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Name of Josh's Stake Center</h3>
+            <p>Address, Salt Lake City, UT</p>
+            <p>Parking on-site. The reception will be indoors.</p>
+            <p>
+              <a class="btn ghost" href="https://maps.app.goo.gl/p4wTbMoxZAmpt8P59" target="_blank" rel="noopener">Open in Google Maps</a>
+            </p>
+          </div>
+          <div class="map-embed">
+            <!-- Privacy-friendly: a static map image with a link. Replace with your own screenshot if you prefer. -->
+            <a href="https://maps.google.com/?q=1234+Memory+Lane,+Salt+Lake+City,+UT" target="_blank" rel="noopener">
+              <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200" alt="Map preview to the venue" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section id="travel" class="section alt">
+      <div class="container">
+        <h2>Travel & Stay</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Airports</h3>
+            <ul>
+              <li>Salt Lake City International (SLC) — ~20 min drive</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Hotels</h3>
+            <ul>
+              <!-- TODO: add your hotel block links -->
+              <li><a href="#" aria-disabled="true">Hotel Block A (link TBD)</a></li>
+              <li><a href="#" aria-disabled="true">Hotel Block B (link TBD)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section">
+      <div class="container">
+        <h2>RSVP</h2>
+        <p>Kindly RSVP by <strong>Sep 30, 2025</strong>.</p>
+        <!-- Option 1: External form (Google Forms) -->
+        <p>
+          <a class="btn" href="https://forms.gle/your-form-id" target="_blank" rel="noopener">Open RSVP Form</a>
+        </p>
+        <!-- Option 2: Inline form (static demo) 
+        <form class="rsvp-form" name="rsvp" data-netlify="true" method="POST">
+          <input type="hidden" name="form-name" value="rsvp">
+          <label>
+            Full name
+            <input required name="name" type="text" autocomplete="name" />
+          </label>
+          <label>
+            Email
+            <input required name="email" type="email" autocomplete="email" />
+          </label>
+          <label>
+            Will you attend?
+            <select required name="attend">
+              <option value="">Choose…</option>
+              <option>Yes, joyfully</option>
+              <option>Regretfully no</option>
+            </select>
+          </label>
+          <label>
+            Meal preference
+            <select name="meal">
+              <option>Chef’s choice</option>
+              <option>Vegetarian</option>
+              <option>Vegan</option>
+              <option>Gluten-free</option>
+            </select>
+          </label>
+          <label>
+            Notes (allergies, song requests)
+            <textarea name="notes" rows="3"></textarea>
+          </label>
+          <button type="submit" class="btn">Send RSVP</button>
+        </form> 
+        <p class="small">If the inline form doesn’t send on GitHub Pages, use the button above.</p> -->
+      </div>
+    </section>
+
+    <!-- REGISTRY -->
+    <section id="registry" class="section alt">
+      <div class="container">
+        <h2>Registry</h2>
+        <p>
+          Your presence is our favorite gift! If you’d like to contribute, here are some options:
+        </p>
+        <ul class="registry">
+          <!-- TODO: add your real links -->
+          <li><a class="card" href="#" aria-disabled="true">Amazon</a></li>
+          <li><a class="card" href="#" aria-disabled="true">Target</a></li>
+          <li><a class="card" href="#" aria-disabled="true">Cash Fund</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <!-- TODO: Replace images -->
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200" alt="Engagement photo 1" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1496302662116-35cc4f36df92?w=1200" alt="Engagement photo 2" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1200" alt="Engagement photo 3" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=1200" alt="Engagement photo 4" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section alt">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Can I bring a plus-one?</summary>
+          <p>Yes!</p>
+        </details>
+        <details>
+          <summary>Are kids welcome?</summary>
+          <p>Absolutely!</p>
+        </details>
+        <details>
+          <summary>What’s the dress code?</summary>
+          <p>Sunday best. Wear your favorite color!</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Josh & Tran — See you on 10/18/2025!</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
