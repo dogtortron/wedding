@@ -2,7 +2,7 @@
   --bg: #fff;
   --text: #1a1a1a;
   --muted: #5c5c5c;
-  --brand: #7a5cff;
+  --brand: #000080;
   --brand-2: #ff8fab;
   --paper: #f6f6f8;
   --ring: 0 0 0 3px rgba(122,92,255,.25);
@@ -15,7 +15,7 @@
     --bg: #0e0f12;
     --text: #f1f1f1;
     --muted: #b9b9b9;
-    --brand: #a390ff;
+    --brand: #53c2e8;
     --brand-2: #ffb3c1;
     --paper: #191b20;
     --shadow: 0 10px 30px rgba(0,0,0,.4);
@@ -67,9 +67,12 @@ h2{ font-size: clamp(1.6rem, 1rem + 2vw, 2.2rem); }
 
 .hero{ position: relative; isolation: isolate; }
 .hero-img{ width:100%; height: 70vh; object-fit: cover; filter: saturate(1.05) contrast(1.02); }
+/*
 .hero::after{
-  content:""; position:absolute; inset:0; background: linear-gradient(to top, color-mix(in oklab, var(--bg), transparent 30%), transparent 30%);
+  content:""; position:absolute; inset:0; background: linear-gradient(to top, color-mix(in oklab, var(--bg), transparent 20%), transparent 20%);
+  pointer-events: none;
 }
+*/
 .hero-content{
   position:absolute; inset: auto 0 5%; display:grid; place-items:center; text-align:center; gap:12px; padding: 0 16px;
 }
