@@ -57,3 +57,80 @@ document.addEventListener('click', (e) => {
     }
   }
 });
+
+//// Gallery
+// Get elements
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('#lightbox .close');
+const galleryImgs = document.querySelectorAll('.gallery img');
+
+let currentIndex = 0;
+
+// Open lightbox
+galleryImgs.forEach((img, index) => {
+  img.addEventListener('click', () => {
+    currentIndex = index;
+    showImage(currentIndex);
+    lightbox.style.display = 'flex';
+  });
+});
+
+// Show image by index
+function showImage(index) {
+  lightboxImg.src = galleryImgs[index].src;
+}
+
+// Close lightbox
+function closeLightbox() {
+  lightbox.style.display = 'none';
+}
+
+// Click X
+closeBtn.addEventListener('click', closeLightbox);
+
+// Click outside image
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+
+// Get new arrow elements
+const leftArrow = document.querySelector('#lightbox .arrow.left');
+const rightArrow = document.querySelector('#lightbox .arrow.right');
+
+// Show image by index
+function showImage(index) {
+  lightboxImg.src = galleryImgs[index].src;
+}
+
+// Move left
+function prevImage() {
+  currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
+  showImage(currentIndex);
+}
+
+// Move right
+function nextImage() {
+  currentIndex = (currentIndex + 1) % galleryImgs.length;
+  showImage(currentIndex);
+}
+
+// Arrow button clicks
+leftArrow.addEventListener('click', prevImage);
+rightArrow.addEventListener('click', nextImage);
+
+// Keyboard controls (unchanged, now reuse functions)
+document.addEventListener('keydown', (e) => {
+  if (lightbox.style.display === 'flex') {
+    if (e.key === 'Escape') {
+      closeLightbox();
+    } else if (e.key === 'ArrowLeft') {
+      prevImage();
+    } else if (e.key === 'ArrowRight') {
+      nextImage();
+    }
+  }
+});
