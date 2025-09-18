@@ -87,7 +87,7 @@ function closeLightbox() {
 }
 
 // Click X
-closeBtn.addEventListener('click', closeLightbox);
+closeBtn.addEventListener('click', closeLighstbox);
 
 // Click outside image
 lightbox.addEventListener('click', (e) => {
