@@ -34,10 +34,12 @@
     <!-- HERO -->
     <section class="hero" aria-label="Hero">
       <!-- TODO: Replace with your own image -->
-      <img class="hero-img" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1600" alt="A romantic outdoor scene" />
+      <!--<img class="hero-img" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1600" alt="A romantic outdoor scene" /> -->
+      <img class="hero-img" src="IMG_3932 copy.jpeg" alt="A romantic outdoor scene" />
       <div class="hero-content">
+        <!--
         <h1 class="couple">Josh & Tran</h1>
-        <p class="date">October 18, 2025 • Salt Lake City, Utah</p>
+        <p class="date">October 18, 2025 • Salt Lake City, Utah</p> -->
         <div id="countdown" class="countdown" aria-live="polite"></div>
         <a href="#rsvp" class="btn">RSVP</a>
       </div>
@@ -86,7 +88,7 @@
             <p>8539 S 2200 W West Jordan, UT, 84088</p>
             <p>Parking on-site. The reception will be indoors.</p>
             <p>
-              <a class="btn ghost" href="https://maps.app.goo.gl/fLVcm3mKxErvokrE6" target="_blank" rel="noopener">Open in Google Maps</a>
+              <a class="btn ghost" href="https://maps.app.goo.gl/p4wTbMoxZAmpt8P59" target="_blank" rel="noopener">Open in Google Maps</a>
             </p>
           </div>
           <div class="map-embed">
@@ -126,10 +128,10 @@
     <section id="rsvp" class="section alt">
       <div class="container">
         <h2>RSVP</h2>
-        <p>Kindly RSVP by <strong>Sep 30, 2025</strong>.</p>
+        <p>Kindly RSVP by <strong>Oct 10, 2025</strong>.</p>
         <!-- Option 1: External form (Google Forms) -->
         <p>
-          <a class="btn" href="https://forms.gle/your-form-id" target="_blank" rel="noopener">Open RSVP Form</a>
+          <a class="btn" href="https://forms.gle/t4MkWPV5xZLiUZB19" target="_blank" rel="noopener">Open RSVP Form</a>
         </p>
         <!-- Option 2: Inline form (static demo) 
         <form class="rsvp-form" name="rsvp" data-netlify="true" method="POST">
@@ -191,13 +193,24 @@
         <h2>Gallery</h2>
         <div class="gallery">
           <!-- TODO: Replace images -->
-          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200" alt="Engagement photo 1" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1496302662116-35cc4f36df92?w=1200" alt="Engagement photo 2" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1200" alt="Engagement photo 3" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=1200" alt="Engagement photo 4" loading="lazy" />
+          <img src="website_pic_1.jpeg" alt="Engagement photo 1" loading="lazy" />
+          <img src="website_pic_2.jpeg" alt="Engagement photo 2" loading="lazy" />
+          <img src="website_pic_5.jpeg" alt="Engagement photo 5" loading="lazy" />
+          <img src="website_pic_3.jpeg" alt="Engagement photo 3" loading="lazy" />
+          <img src="website_pic_4.jpeg" alt="Engagement photo 4" loading="lazy" />
+          
+          <img src="website_pic_6.jpeg" alt="Engagement photo 6" loading="lazy" />
         </div>
       </div>
     </section>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox">
+      <span class="close">&times;</span>
+      <span class="arrow left">&#10094;</span>   <!-- left arrow -->
+      <img id="lightbox-img" src="" alt="Expanded view">
+      <span class="arrow right">&#10095;</span>  <!-- right arrow -->
+    </div>
 
     <!-- FAQ -->
     <section id="faq" class="section">
