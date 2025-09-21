@@ -67,12 +67,7 @@ h2{ font-size: clamp(1.6rem, 1rem + 2vw, 2.2rem); }
 
 .hero{ position: relative; isolation: isolate; }
 .hero-img{ width:100%; height: 70vh; object-fit: cover; filter: saturate(1.05) contrast(1.02); }
-/*
-.hero::after{
-  content:""; position:absolute; inset:0; background: linear-gradient(to top, color-mix(in oklab, var(--bg), transparent 20%), transparent 20%);
-  pointer-events: none;
-}
-*/
+
 .hero-content{
   position:absolute; inset: auto 0 5%; display:grid; place-items:center; text-align:center; gap:12px; padding: 0 16px;
 }
@@ -111,13 +106,6 @@ h2{ font-size: clamp(1.6rem, 1rem + 2vw, 2.2rem); }
   display:grid; place-items:center; border:1px dashed color-mix(in oklab, var(--text), transparent 80%);
   padding:1.2rem; border-radius:12px; min-height: 80px; background: var(--bg);
 }
-
-/*
-.gallery{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.gallery img{ aspect-ratio: 4/3; object-fit: cover; }
-@media (max-width: 900px){ .gallery{ grid-template-columns: repeat(2,1fr); } }
-*/
-
 
 details{ background: var(--bg); border:1px solid color-mix(in oklab, var(--text), transparent 88%); border-radius:12px; padding:.75rem 1rem; margin:.5rem 0; }
 details[open]{ box-shadow: var(--shadow); }
@@ -197,4 +185,13 @@ details[open]{ box-shadow: var(--shadow); }
 
 #lightbox .arrow.right {
   right: 30px;
+}
+
+.details-img {
+  display: block;        
+  margin: 20px auto;     
+  max-width: 60%;     
+  height: auto;          
+  border-radius: 12px;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
 }
