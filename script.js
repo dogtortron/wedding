@@ -8,12 +8,11 @@ if (navToggle && nav) {
   });
 }
 
-// Countdown (set your wedding date/time below)
+// Countdown 
 const countdownEl = document.getElementById('countdown');
 (function initCountdown(){
   if (!countdownEl) return;
-  // TODO: set your exact time and timezone if needed
-  const target = new Date('2025-10-18T09:00:00-06:00'); // 1:30 PM MDT
+  const target = new Date('2025-10-18T09:00:00-06:00'); // 9:00 AM MDT
   const pad = (n)=> String(n).padStart(2,'0');
 
   function render(){
@@ -87,7 +86,7 @@ function closeLightbox() {
 }
 
 // Click X
-closeBtn.addEventListener('click', closeLightbox);
+closeBtn.addEventListener('click', closeLighstbox);
 
 // Click outside image
 lightbox.addEventListener('click', (e) => {
